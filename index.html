@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Find Nearby Breweries!</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<script src="main.js"></script>
+	</head>
+
+	<body class="container">
+		<img alt="brewery" src="images/brew.jpeg" />
+		<div>
+			<h1>Find local breweries near you!</h1>
+		</div>
+		<form class="form-data" autocomplete="on">
+			<div>
+				<h2>Enter in your city</h2>
+			</div>
+			<div>
+				<label for="city">CityName</label>
+				<input type="text" id="city" required class="city-name" />
+			</div>
+			<button class="search-btn">Submit</button>
+		</form>
+		<div class="result">
+			<div class="loading">loading...</div>
+			<div class="errors"></div>
+			<div class="data"></div>
+			<div class="result-container">
+				<p><strong>City: </strong><span class="my-city"></span></p>
+				<p><strong>Breweries: </strong><span class="brews"></span></p>
+			</div>
+			<button class="clear-btn">Change city</button>
+		</div>
+
+	</body>
+</html>
